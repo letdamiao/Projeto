@@ -54,11 +54,16 @@ function ToRight(){
     i++
     document.getElementById("author").innerHTML = rewviews[i].name
     document.getElementById("job").innerHTML = rewviews[i].job
-    image.SetAAtribut("src", rewviews[index].image)
+    document.getElementById("image").setAttribute("src", rewviews[i].image);
+    document.getElementById("text").innerHTML = rewviews[i].text
+  
+ 
   
 }
 function Toleft(){
     i--
     document.getElementById("author").innerHTML = rewviews[i].name
     document.getElementById("job").innerHTML = rewviews[i].job
+    document.getElementById("image").setAttribute("src", rewviews[i].image);
+    document.getElementById("text").innerHTML = rewviews[i].text
 }
